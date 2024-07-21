@@ -1,0 +1,74 @@
+.gradient-button {
+    background: linear-gradient(to right, #e74694, #9061f9 );
+    color: white;
+    border: none;
+    padding: 15px 23px;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease; /* Add a subtle shadow effect on hover */
+  }
+  
+  /* .gradient-button:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } */
+  
+  .outline-button {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    color: whitesmoke;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background-clip: padding-box;
+}
+.outline-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  color: whitesmoke;
+  /* background: linear-gradient(to right, #e74694, #9061f9); */
+}
+
+/* .outline-button::before{
+  border-radius: 25px;
+  
+} */
+
+  /* .outline-button::before {
+    content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(to right, #e74694, #9061f9 );
+            z-index: -1;
+            border-radius: 25px;
+
+} */
+
+  .green-font{
+    color:rgb(22 242 179) !important
+  }
+  .pink-font{
+    color: rgb(236 72 153) !important;
+  }
+
+  .icon-link{
+    color: rgb(236 72 153) !important;
+    margin-left: 25px;
+    transition: transform 0.2s ease-in-out; 
+    
+  }
+  .icon-link:hover {
+    transform: scale(1.25);
+    
+  }
+  .gradient-button{
+    text-decoration: none;
+}
