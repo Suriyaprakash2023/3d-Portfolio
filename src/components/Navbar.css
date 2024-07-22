@@ -1,13 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Pacifico&family=Playwrite+CU:wght@100..400&display=swap');
+
 .nav-link:hover {
     color: rgb(236, 72, 153) !important;
   }
   
 .nav-name{
     color: rgb(22 242 179);
-    
+    font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 88px;
+  margin-left: -4px;
 }
 .github-button:hover{
 
     color: rgb(236, 72, 153);
 }
 
+.img-logo{
+    height: 40px;
+    width: 40px;
+    transform: rotate(25deg);
+}

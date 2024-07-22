@@ -6,16 +6,17 @@ import { FaBars } from 'react-icons/fa';
 // import { Close, CloseRounded } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
 import './Navbar.css';
+import LogoImg from './images/Suriya.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   // const theme = useTheme()
   return (
     <Nav>
       <NavbarContainer>
+ 
         <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <DiCssdeck size="3rem" /> <Span className='nav-name'>Suriya</Span>
-          </a>
+        <img src={LogoImg}  alt="Your Image Description" className='img-logo'/>
+          <Span className='nav-name' style={{  fontSize: '26px'}}>uriya</Span>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {
