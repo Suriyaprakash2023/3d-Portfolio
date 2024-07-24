@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+    gap: 70px; /* Adjust gap as needed */
+    width: 100%;
+  
+    /* Center items in the second row */
+    & > *:nth-child(n+3):nth-child(-n+4) {
+      grid-column: span 2; /* Ensures they span two columns */
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      gap: 30px; /* Adjust gap for mobile if needed */
+  
+      & > * {
+        grid-column: 1 !important; /* Force all items to take full width */
+      }
+    }
+  }
