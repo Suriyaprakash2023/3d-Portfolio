@@ -5,6 +5,7 @@ import { FaBars } from 'react-icons/fa';
 // import { Bio } from '../data/constants';
 // import { Close, CloseRounded } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import LogoImg from './images/Suriya.png';
 const Navbar = () => {
@@ -32,10 +33,13 @@ const Navbar = () => {
         </NavItems>
         <ButtonContainer>
           {/* <GitHubButton className='github-button'  target="_blank">Github Profile</GitHubButton> */}
-
-                    <div class="voltage-button">
+          <Link to='https://github.com/Suriyaprakash2023' target='_blank'>
+            <div class="voltage-button">
             
-            <button><i class="fa-brands fa-github me-2" style={{fontSize:"20px"}} ></i>Github Profile</button>
+            <button>
+              <i class="fa-brands fa-github me-2" style={{fontSize:"20px"}} ></i>
+                Github Profile
+            </button>
 
     
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 234.6 61.3" preserveAspectRatio="none" xml:space="preserve">
@@ -43,7 +47,7 @@ const Navbar = () => {
               <filter id="glow">
                 <feGaussianBlur class="blur" result="coloredBlur" stdDeviation="2"></feGaussianBlur>
                 <feTurbulence type="fractalNoise" baseFrequency="0.075" numOctaves="0.3" result="turbulence"></feTurbulence>
-            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="G" result="displace"></feDisplacementMap>
+               <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="G" result="displace"></feDisplacementMap>
                 <feMerge>
                   <feMergeNode in="coloredBlur"></feMergeNode>
                   <feMergeNode in="coloredBlur"></feMergeNode>
@@ -65,7 +69,7 @@ const Navbar = () => {
           </div>
 
 
-
+          </Link>
         </ButtonContainer>
         {
           isOpen &&

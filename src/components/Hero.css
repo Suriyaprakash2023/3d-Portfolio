@@ -296,7 +296,9 @@ strong {
 }
 
 .cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #9a8af4be;
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 0 0.5em 1.5em -0.5em #22fb63be;
 }
 
 .cssbuttons-io-button:active {
